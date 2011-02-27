@@ -15,7 +15,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': '%s/db/feedme.db' % ROOT_PATH,
+        'NAME': '%s/db/feedme.db' % (ROOT_PATH),
         'USER': '',
         'PASSWORD': '',
         'HOST': '',
