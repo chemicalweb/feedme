@@ -1,5 +1,12 @@
 {% extends "base/sitebase.html" %}
 {% block content %}
-    {{ feed.title }}<br />
-    {{ feed.description }}
+    <h2>{{ feed.title }}</h2><br />
+    <h4>{{ feed.description }}</h4>
+    <br /><br />
+    {% with feed.post_set.all as posts %}
+        {% for post in posts %}
+            {{ post.title }}<br />
+            {{ post.summary|safe }}<br /><br />
+        {% endfor %}
+    {% endwith %}
 {% endblock content %}
