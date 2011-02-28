@@ -23,6 +23,8 @@ DATABASES = {
     }
 }
 
+CACHE_BACKEND = "locmem://"
+
 PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 
 # Local time zone for this installation. Choices can be found here:
