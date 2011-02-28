@@ -1,3 +1,4 @@
+from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from django.db import IntegrityError
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404
@@ -10,6 +11,27 @@ from time import mktime
 
 import feedparser
 
+from lib.helpers import render_to
+
+
+@render_to("feeds/feed.html")
+def feed(request, feed_id):
+    f = get_object_or_404(Feed, pk=feed_id)
+    post_list = f.post_set.all()
+    paginator = Paginator(post_list, 5)
+
+    try:
+        page = int(request.GET.get('page', '1'))
+    except ValueError:
+        page = 1
+    try:
+        posts = paginator.page(page)
+    except (EmptyPage, InvalidPage):
+        posts = paginator.page(paginator.num_pages)
+    return dict(
+        feed=f,
+        posts=posts
+    )
 
 def mark_as_read(request):
     if request.method == 'POST':

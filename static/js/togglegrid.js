@@ -20,5 +20,5 @@ function gridstate() {
         return 'off';
     } else {
         return 'on';
-    };
+    }
 }

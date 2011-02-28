@@ -5,3 +5,10 @@
 #list-feeds {
   border: 1px solid #000;
 }
+
+.pagination {
+    text-align: center;
+}
+.pagination a:link {
+    text-decoration: none;
+}

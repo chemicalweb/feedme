@@ -1,4 +1,35 @@
 {% extends "base/sitebase.html" %}
 {% block content %}
-    {{ content }}
+    {% for post in posts.object_list %}
+        <h4>{{ post.title }}</h4>
+        {{ post.summary|safe }}
+        <hr>
+    {% endfor %}
+
+    <div class="pagination">
+        <span class="step-links">
+            {% if posts.has_previous %}
+                <a href="{% url feed feed.id %}?page={{ posts.previous_page_number }}">
+            {% endif %}
+             &lt;prev
+            {% if posts.has_previous %}
+                </a>
+            {% endif %}
+            |
+
+            <span class="current">
+                {{ posts.number }} of {{ posts.paginator.num_pages }}
+            </span>
+
+            |
+            {% if posts.has_next %}
+                <a href="{% url feed feed.id %}?page={{ posts.next_page_number }}">
+            {% endif %}
+            next&gt;
+            {% if posts.has_next %}
+                </a>
+            {% endif %}
+        </span>
+    </div>
+
 {% endblock content %}

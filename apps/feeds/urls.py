@@ -4,6 +4,7 @@ from apps.feeds.models import Post, Feed, Section
 
 
 urlpatterns = patterns('apps.feeds.views',
+    url(r'feed/(\d+)$', 'feed', name='feed'),
     url(r'update$', 'update_all', name='update_all'),
     url(r'read$', 'mark_as_read', name='mark_as_read'),
 )
@@ -17,10 +18,6 @@ urlpatterns += patterns('django.views.generic',
         'queryset': Section.objects.all(),
         'template_object_name': 'section',
     }, name='section'),
-    url(r'feed/(?P<object_id>[0-9]+)$', 'list_detail.object_detail', {
-        'queryset': Feed.objects.all(),
-        'template_object_name': 'feed',
-    }, name='feed'),
     url(r'post/(?P<object_id>[0-9]+)$', 'list_detail.object_detail', {
         'queryset': Post.objects.all(),
         'template_object_name': 'post',
