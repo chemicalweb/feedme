@@ -7,4 +7,5 @@ FeedMe is a web based feeds aggregator written in python using the Django framew
 ## Dependencies
 
 - django
+- django-admin-tools
 - feedparser
