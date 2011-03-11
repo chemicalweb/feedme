@@ -1,0 +1,832 @@
+[
+    {
+        "pk": 1, 
+        "model": "feeds.section", 
+        "fields": {
+            "name": "devel"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "feeds.section", 
+        "fields": {
+            "name": "infosec"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "feeds.feed", 
+        "fields": {
+            "description": "Latest news from python.org", 
+            "title": "Python News", 
+            "url": "http://python.org/channews.rdf", 
+            "section": 1, 
+            "last_update": "2011-03-10 17:13:21", 
+            "favicon": ""
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "feeds.feed", 
+        "fields": {
+            "description": "Latest job offers from djangoproject.com", 
+            "title": "Django Jobs", 
+            "url": "http://www.djangoproject.com/rss/community/jobs/", 
+            "section": 1, 
+            "last_update": "2011-03-10 17:15:25", 
+            "favicon": "http://www.djangoproject.com/favicon.ico"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "feeds.feed", 
+        "fields": {
+            "description": "Latest posts from the full-disclosure mailing list", 
+            "title": "Full Disclosure", 
+            "url": "http://seclists.org/rss/fulldisclosure.rss", 
+            "section": 2, 
+            "last_update": "2011-03-10 17:22:15", 
+            "favicon": "http://seclists.org/favicon.ico"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "EuroSciPy talk submission deadline May 8", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p><a class=\"reference external\" href=\"http://www.euroscipy.org/conference/euroscipy2011\">EuroSciPy 2011</a> is looking for talk submissions by May 8.  The conference will be in Paris, France August 25-28.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Wed9Mar20110930-0700", 
+            "published": "2011-03-09 16:30:00"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "PyCon AU 2011 Call for Proposals", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>Submit your <a class=\"reference external\" href=\"http://pycon-au.org/2011/conference/proposals/\">proposal</a> by May 2 for <a class=\"reference external\" href=\"http://pycon-au.org/2011/\">PyCon AU 2011</a> (Sydney, Australia, 8/20-21).</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Sat26Feb20112200-0700", 
+            "published": "2011-02-27 05:00:00"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Python 3.2 released", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p><a class=\"reference external\" href=\"http://python.org/download/releases/3.2/\">Python 3.2</a> has been released.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Sun20Feb201123300200", 
+            "published": "2011-02-20 21:30:00"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Python 3.2 release candidate 3 released", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>The <a class=\"reference external\" href=\"http://python.org/download/releases/3.2/\">third release candidate of Python 3.2</a> has been released for testing.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Mon14Feb201107000200", 
+            "published": "2011-02-14 05:00:00"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Python 3.2 release candidate 2 released", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>The <a class=\"reference external\" href=\"http://python.org/download/releases/3.2/\">second release candidate of Python 3.2</a> has been released for testing.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Mon31Jan201111300200", 
+            "published": "2011-01-31 09:30:00"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "OSCON 2011: Call for Proposals (2/7 deadline)", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p><a class=\"reference external\" href=\"http://www.oscon.com/oscon2011\">O'Reilly Open Source Convention 2011</a> (7/25-29 Portland, OR) <a class=\"reference external\" href=\"http://www.oscon.com/oscon2011/public/cfp/144\">Call for Proposals</a> deadline Feb 7</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Tue25Jan20110700-0700", 
+            "published": "2011-01-25 14:00:00"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Python 3.2 release candidate 1 released", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>The <a class=\"reference external\" href=\"http://python.org/download/releases/3.2/\">first release candidate of Python 3.2</a> has been released for testing.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Sun16Jan201108300200", 
+            "published": "2011-01-16 06:30:00"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Python 3.2 beta 2 released", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>The <a class=\"reference external\" href=\"http://python.org/download/releases/3.2/\">second beta release of Python 3.2</a> has been released for testing.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Mon20Dec201008300200", 
+            "published": "2010-12-20 06:30:00"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Python 3.2 beta 1 released", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>The <a class=\"reference external\" href=\"http://python.org/download/releases/3.2/\">first beta release of Python 3.2</a> has been released for testing.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Mon6Dec201022300200", 
+            "published": "2010-12-06 20:30:00"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "PSF supports SciPy India 2010", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>The PSF is pleased to announce that it is providing a $1250 US grant to help fund sprints at the 2010 SciPy India conference, to be held in Hyderabad between December 13th to the 18th. This year SciPy India has over 20 scheduled talks and 30 talks in total which is a 300% increase on last year.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Mon6Dec201010250000", 
+            "published": "2010-12-06 10:25:00"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Python 2.7.1 and 3.1.3 released.", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>Python <a class=\"reference external\" href=\"http://python.org/download/releases/2.7.1/\">2.7.1</a> and <a class=\"reference external\" href=\"http://python.org/download/releases/3.1.3/\">3.1.3</a>  have been released.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Sat27Nov20102245-0600", 
+            "published": "2010-11-28 04:45:00"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Python Bug Weekend: November 20 and 21", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>Developers around the world will try to close some Python bugs and patches this weekend.  Meet in #python-dev on IRC, or look for a local meeting; more at <a class=\"reference external\" href=\"http://wiki.python.org/moin/PythonBugDay\">http://wiki.python.org/moin/PythonBugDay</a>.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Fri19Nov2010155100-0500", 
+            "published": "2010-11-19 20:51:00"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "ConFoo.ca 2011 (Montreal): Call for Proposals", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>ConFoo, a conference showcasing aspects of Web development, including Python, Ruby, PHP, databases, and scaling, has posted its call for speakers.  The deadline for proposals is November 26th.  More details are <a class=\"reference external\" href=\"http://confoo.ca/en/call-for-papers\">on the website</a>.  Confoo.ca 2011 will take place in Montreal, Canada, from March 9th to 11th 2011.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Fri19Nov2010154400-0500", 
+            "published": "2010-11-19 20:44:00"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Python 3.2 alpha 4 released", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>The <a class=\"reference external\" href=\"http://python.org/download/releases/3.2/\">fourth alpha release of Python 3.2</a> has been released for testing.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Tue16Nov20108300200", 
+            "published": "2010-11-16 06:30:00"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Python 2.7.1 and 3.1.3 release candidates available.", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>Python <a class=\"reference external\" href=\"http://python.org/download/releases/2.7.1/\">2.7.1</a> and <a class=\"reference external\" href=\"http://python.org/download/releases/3.1.3/\">3.1.3</a> release candidates have been released for testing.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Sat13Nov20101500-0600", 
+            "published": "2010-11-13 21:00:00"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Python 3.2 alpha 3 released", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>The <a class=\"reference external\" href=\"http://python.org/download/releases/3.2/\">third and final alpha release of Python 3.2</a> has been released for testing.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Tue12Oct20108300200", 
+            "published": "2010-10-12 07:30:00"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Python 3.2 alpha 2 released", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>The <a class=\"reference external\" href=\"http://python.org/download/releases/3.2/\">second alpha release of Python 3.2</a> has been released for testing.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Mon06Sep20108300200", 
+            "published": "2010-09-06 07:30:00"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Python 2.6.6 released", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p><a class=\"reference external\" href=\"http://python.org/download/releases/2.6.6/\">Python 2.6.6</a> final has been released.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Tue24Aug20100945-0400", 
+            "published": "2010-08-24 14:45:00"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Python 2.6.6rc2 released", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>A second <a class=\"reference external\" href=\"http://python.org/download/releases/2.6.6/\">release candidate for Python 2.6.6</a> has been released for testing.  Python 2.6.6 final is schedule for release on August 24, 2010.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Wed16Aug20101929-0400", 
+            "published": "2010-08-17 00:29:00"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Python 2.6.6rc1 released", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>A <a class=\"reference external\" href=\"http://python.org/download/releases/2.6.6/\">release candidate for Python 2.6.6</a> has been released for testing.  Python 2.6.6 final is schedule for release on August 16, 2010.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Wed04Aug20101809-0400", 
+            "published": "2010-08-04 23:09:00"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Python 3.2 alpha 1 released", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>The <a class=\"reference external\" href=\"http://python.org/download/releases/3.2/\">first alpha release of Python 3.2</a> has been released for testing.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Sun01Aug20108300200", 
+            "published": "2010-08-01 07:30:00"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Frank Willison Award goes to Christian Tismer", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>Christian Tismer has been selected as the recipient for the <a class=\"reference external\" href=\"http://pyfound.blogspot.com/2010/07/frank-willison-memorial-award-recipient.html\">2010 Frank Willison Memorial Award</a> for contributions to the Python community.  Congratulations!</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Thu29Jul2010830-0700", 
+            "published": "2010-07-29 16:30:00"
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Python track at German Zope conference", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>The <a class=\"reference external\" href=\"http://www.zope.de/tagung/Dresden_2010\">German Zope Conference</a> takes place September 15-17 in Dresden. We are still looking for talk proposals for the Python track.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Wed14Jul20108300200", 
+            "published": "2010-07-14 07:30:00"
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "Python 2.7 released", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p>The <a class=\"reference external\" href=\"http://python.org/download/releases/2.7/\">first production version of Python 2.7</a> has been released.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Sun4Jul20101030-0500", 
+            "published": "2010-07-04 16:30:00"
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Python News", 
+            "title": "PSF supports PyCon India", 
+            "summary": "<!--utf-8--><!--0.7-->\n\n\n\n\n<p><a class=\"reference external\" href=\"http://python.org/psf/\">The PSF</a> is sponsoring <a class=\"reference external\" href=\"http://in.pycon.org/2010/\">PyCon India 2010</a>, to be held in Bangalore on Sep 25/26, 2010. The PSF is contributing an amount of $1000 towards the conference and wishes PyCon India all success.</p>", 
+            "is_read": false, 
+            "link": "http://www.python.org/news/index.html#Wed30Jun20100730-0700", 
+            "published": "2010-06-30 15:30:00"
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Python / Django / JQuery Developer (freelance / telecommute)", 
+            "summary": "<p><strong>United States </strong></p>\n\n<p>I am a technical project manager for an ongoing Python / Django / JQuery project.  We are looking to augment our team, as soon as&nbsp;possible.\n</p>\n<p>TECHNICAL REQUIREMENTS:\n   - HTML, XHTML, CSS, AJAX, JSON, JavaScript, and Javascript frameworks such as jQuery, prototype, YUI, etc.\n   - MVC architecture and frameworks (such as Django or others), and the ability to work with all aspects of the Django framework\n   - database schema design and querying best practices\n   - Django.Forms\n   - Working knowledge of Photoshop, Fireworks, or Illustrator\n   - LAMP stack architecture\n   - Linux &amp; UNIX Administration\n   - MySQL &amp; Apache\n   - Version Control Systems such as Git, SVN, HG, etc.\n   - RESTful web services\n   - Working on large high availability and high scalability web applications\n   - Modal Dialog Experience a plus\n   - Ability to reverse-engineer or analyze existing code-base and integrate with&nbsp;it\n</p>\n<p>SOFT SKILLS:\n   - Keen eye for clean UI implementation (Web 2.0 style)\n   - Strong knowledge of website design best practices\n   - Strong communication skills and ability to work in a fast paced environment\n   - Strong problem solving and analytical skills\n   - Highly motivated self-starter\n   - Ability to tackle challenging problems on a tight schedule\n   - Knowledge of cloud computing (Amazon EC2 and S3) and how to leverage the cloud to build scalable applications.\n   - Ability to work with little supervision.\n   - Solid oral and written US English comprehension and communication skills.\n   - Familiarity with communicating technical requirements\n   - Experience in working with large-scale, consumer-oriented websites\n   - interpret wireframes, designs, and software requirements to write code\n   - ability to provide accurate time estimates and meet reasonable deadlines\n   - highly detail-oriented\n   - excellent teamwork skills\n   - ability to explain technical concepts and requirements to non-technical people\n   - Ability to learn new programming languages quickly (already knowing many programming languages is a&nbsp;plus)\n</p>\n<p>PLEASE SUBMIT PROPOSALS / RESUMES WITH THE&nbsp;FOLLOWING:\n</p>\n<ul>\n <li><p>3-5 examples of your most challenging Python / Django project (both view and model implementation).  Do <em>not</em> point us to view your complete portfolio, or give us a list of 50 URL's.\n   We will ignore such proposals.  Please feel free to pick out 3-5 examples from your&nbsp;portfolio.\n</p>\n\n </li>\n\n <li><p>Types of projects we're expecting include ecommerce, social media, mobile integration, CRM, ERP, or reporting web&nbsp;applications.\n</p>\n\n </li>\n\n <li><p>Source code samples in Django, Python, and JQuery from the above 3-5 Django projects, and an explanation of the functionality of the source&nbsp;code.\n</p>\n\n </li>\n\n <li><p>Client reference contact information for the 3-5 Django&nbsp;projects\n</p>\n\n </li>\n\n <li><p>If you have a blog, github or google code repository/opensource or other interesting projects that you feel may be relevant to you application, please provide links for&nbsp;review. \n</p>\n\n </li>\n</ul>\n<p>YOU MUST AGREE TO THE&nbsp;FOLLOWING:\n</p>\n<ul>\n <li><p>Being regularly available during some US&nbsp;hours\n</p>\n\n </li>\n\n <li><p>Provide a publicly available staging environment, and/or be able to deploy a project to a 3rd-party staging&nbsp;environment\n</p>\n\n </li>\n\n <li><p>Provide frequent updates (either daily or every other&nbsp;day)\n</p>\n\n </li>\n</ul>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/1018/", 
+            "published": "2011-03-08 15:36:49"
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Freelance Django developer at award-winning UK travel start-up", 
+            "summary": "<p><strong>London, United Kingdom </strong></p>\n\n<p>Based in London, <a href=\"http://Pitchup.com\">Pitchup.com</a> is a web start-up creating <em>the</em> portal for camping and caravanning, a market which is booming as Brits switch to domestic&nbsp;holidays.\n</p>\n<p>Judged Best UK Travel Information Site 2010 by Travolution and with 1m visitors so far, we have a clear plan towards profitability and our founder is a veteran of lastminute.com/Travelocity and the holiday-park&nbsp;sector.\n</p>\n<p>We're looking for an ambitious developer to join our friendly team, to help us manage our current site and tackle tough geo, online booking and search&nbsp;challenges.\n</p>\n<ul>\n <li>\n     Expert in Django, Python, Ruby, or&nbsp;Perl\n </li>\n\n <li>\n     Good level of experience with PostgreSQL/MySQL and ideally, Javascript&nbsp;skills\n </li>\n\n <li>\n     Familiarity with Apache/nginx server&nbsp;environments\n </li>\n\n <li>\n     A fan of agile working practices - gets things&nbsp;done\n </li>\n\n <li>\n     A quick-on-the-uptake problem&nbsp;solver\n </li>\n\n <li>\n     Enjoys coming up with new feature&nbsp;ideas\n </li>\n</ul>\n<p>Environment\n</p>\n<p>We're all about collaboration - you'll take part in regular brainstorms as the company grows rapidly over coming&nbsp;months:\n</p>\n<ul>\n <li>\n     Solving a real problem in the camping sector that will benefit&nbsp;millions\n </li>\n\n <li>\n     Direct experience of rapid evolution of a high-profile startup, working alongside other experts in their&nbsp;fields\n </li>\n\n <li>\n     Apolitical, friendly&nbsp;environment\n </li>\n\n <li>\n     Competitive rates of&nbsp;pay\n </li>\n</ul>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/1016/", 
+            "published": "2011-03-07 01:16:20"
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Python Web Application Developer", 
+            "summary": "<p><strong>Palo Alto, California (required on-site)</strong></p>\n\n<p>Syapse is looking for an experienced Python/Web developer.  We are building a suite of modular, cloud/web-delivered applications, and we are looking for a strong engineer to contribute to the foundation of these applications.  You should be confident with all aspects of web application development, but in particular interested in being our Django platform expert.  Projects can range from components for customer applications to data pipelines for our structured, semantic, scientific&nbsp;content.\n</p>\n<p>Responsibilities\n</p>\n<ul>\n <li>\n     Develop Django-based web applications and components together with Syapse's engineering&nbsp;team.\n </li>\n\n <li>\n     Plan, prototype, and implement new application features, as well as internal&nbsp;tools.\n </li>\n\n <li>\n     Assure scalability including database and web server&nbsp;configuration.\n </li>\n\n <li>\n     Optimize and tune web application performance, ranging from database to page&nbsp;delivery.\n </li>\n\n <li>\n     Work with our cloud-based data center as&nbsp;necessary.\n </li>\n</ul>\n<p>Requirements\n</p>\n<ul>\n <li>\n     First things first: we just love building stuff.  You should,&nbsp;too.\n </li>\n\n <li>\n     Minimum of three years experience developing web applications, with experience across the full stack, browser to&nbsp;database.\n </li>\n\n <li>\n     Fluent in Python, SQL, HTML,&nbsp;Javascript.\n </li>\n\n <li>\n     Knowledge of standard web application issues, including at least security, performance, caching, HTTP, and Apache&nbsp;configuration.\n </li>\n\n <li>\n     Experience with Django or similar web application&nbsp;framework.\n </li>\n\n <li>\n     Solid database experience (MySQL a&nbsp;plus).\n </li>\n\n <li>\n     Solid documentation, testing, and process&nbsp;fundamentals.\n </li>\n\n <li>\n     Ability to work both independently and closely in a team, and bring other engineers up to speed on your work rapidly and&nbsp;thoroughly.\n </li>\n\n <li>\n     Knowledge of biomedical domain a&nbsp;plus.\n </li>\n</ul>\n<p>About the&nbsp;company\n</p>\n<p>Syapse is a startup aiming to transform the way tomorrow's biotech companies organize their biology data and results.  Our SaaS-delivered applications accelerate biomedical product development by organizing scientific results, and enabling science-based project management and collaboration.  Syapse is looking to hire software developers who are jazzed about using technology to make a difference in people's lives, helping biomedical companies bring diagnostics and therapies to patients&nbsp;faster.\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/1013/", 
+            "published": "2011-03-04 06:17:00"
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Freelance Graphic Designer with Django Template Skills", 
+            "summary": "<p><strong>England, United Kingdom (required on-site)</strong></p>\n\n<p>YouGov is a global opinion research company that runs a large collection of online consumer research panels. We interact with our panelists through a network of websites in different countries and languages. Examples of these include <a href=\"http://today.yougov.co.uk\">http://today.yougov.co.uk</a>, <a href=\"http://my.yougov.com/\">http://my.yougov.com/</a> and \n   <a href=\"http://www.tellYouGov.com\">http://www.tellYouGov.com</a>. \n    We also manage client facing (B2B) sites such as <a href=\"http://www.yougov.co.uk\">http://www.yougov.co.uk</a> and \n   <a href=\"http://corp.yougov.com/\">http://corp.yougov.com/</a>\n   . Many of these sites are due for a redesign.  Between them and the new sites we are creating, you will have many opportunities to showcase your design skills for a global&nbsp;audience.\n</p>\n<p>We seek an extremely talented graphic/web designer to design the graphics and user experience for our sites. You must know how to create engaging web experiences that appeal to a wide range of consumers - young and old, rich or poor, straight or gay, conservative or liberal. Unlike a music site that might be designed to appeal strictly to 13-24 year olds we need to appeal to a broad cross-section of the population so that we can perform demographically balanced research. How to do this without building something boring and lowest common denominator is an art, and that's where you come&nbsp;in.\n</p>\n<p>You should be able to take a general, possibly vague, description of a design problem and quickly come back with one or more attractive wireframes and/or storyboards showing how you would solve it. Beyond your considerable visual design skills, you must be well versed in CSS and HTML. As all our new sites are running on Django (ex: \n   <a href=\"http://today.yougov.com/\">http://today.yougov.com/</a>) \n   it is critical that you have strong experience with the Django template system. We use the 960 grid system. Good javascript and JQuery experience is also particularly&nbsp;valuable. \n</p>\n<p>Please contact <a href=\"mailto:vacancies@yougov.com\">vacancies@yougov.com</a> and provide links to your portfolio. Principals only. This is a contract position. Job location is 50 Featherstone St, London (near Old&nbsp;Street).\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/1011/", 
+            "published": "2011-03-03 22:20:06"
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Python/Django Web Developer", 
+            "summary": "<p><strong>Toronto, Canada (required on-site)</strong></p>\n\n<p>The Web Developer will play a key role in the development of our online presence. Along with new development, you will also be responsible for helping in the maintenance of all of our online initiatives. You will expand the options available on our website and the reach of our web presence by building community applications, new partner services, and developing and maintaining our portfolio of online tools and services. You core duties will consist of designing, building and maintaining front-end and back-end components on all of our online projects that will improve our travelers' online&nbsp;experience\n</p>\n<p>This is an exciting opportunity to work with a talented team and have a major impact on the online&nbsp;experience.\n</p>\n<p><strong>Requirements</strong>\n   - Completion of a Post-secondary program in computer science or related discipline \n   - Strong PYTHON skills is a MUST\n   - Experience working in a web framework, Django preferred.\n   - Strong CSS and HTML skills\n   - Strong javascript skills\n   - Experience working in javascript frameworks/libraries. JQuery preferred\n   - MySQL\n   - Object Oriented Programming\n   - Proper page formatting and styling: know enough not to use tables to style a page, separate business logic form HTML\n   - Ability to work in a fast paced environment, and quickly produce deliverables\n   - Ability to communicate effectively with both technical and non-technical staff\n   - Content Management Systems, an asset\n   - Familiarity with Linux, an asset\n   - Apache Webserver, an asset<br />\n\n</p>\n<p><em></em>If you do not have the relevant experience, and/or lack strong Python skills, please do no&nbsp;apply.\n</p>\n<p>If you have a blog, github or google code repository/opensource or other interesting projects that you feel may be relevant to you application, please provide links for&nbsp;review.\n</p>\n<p>Please email your resume and cover letter, stating salary expectations, in confidence to <a href=\"mailto:employment@gap.ca\">employment@gap.ca</a>, indicating in the subject line Web&nbsp;Developer.\n</p>\n<p>To apply you must hold appropriate citizenship or documents permitting you to reside and work in&nbsp;Canada.\n</p>\n<p><strong>About the Company</strong>\n   At Gap Adventures, we're dedicated to changing people's lives through authentic and sustainable adventure travel experiences. We require candidates who are dedicated to leading with service, committed to bringing about meaningful change by doing the right thing and are not afraid or embracing the bizarre. Our employees share the privilege of creating happiness and community with those around them as they seeks to improve world through&nbsp;travel.\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/1010/", 
+            "published": "2011-03-03 03:48:00"
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Web Site Designer/Developer, Senior", 
+            "summary": "<p><strong>Tucson, Arizona (required on-site)</strong></p>\n\n<p>Arizona Public Media is looking for a Senior Website Designer/Developer to join our Online &amp; New Media&nbsp;Team.\n</p>\n<p>Object-oriented python web developer. This position is responsible for designing, developing, implementing, and maintaining Arizona Public Media's python/django-based web&nbsp;sites\n</p>\n<p>*Requirements<em>\n</em> Strong background in object oriented python, version 2.5+.\n   <em> Demonstrated experience developing large scale web applications &#8212; not simple website(s).\n</em> Proficient in HTML, CSS, Javascript &amp; related technologies.\n   * Fundamental understanding of security technologies/best practices and protocols.\n   <em> Demonstrated ability to document processes and methods.\n</em> Ability to create non-technical presentations, and write&nbsp;proposals\n</p>\n<p>Outstanding UA benefits include health, dental, and vision insurance plans; life insurance and disability programs; paid vacation, sick leave, and holidays; UA/ASU/NAU tuition reduction for the employee and qualified family members; state retirement plan; access to UA recreation and cultural activities; and&nbsp;more! \n</p>\n<p>For details and to apply go to: <a href=\"http://about.azpm.org/jobs/\">http://about.azpm.org/jobs/</a>\n</p>\n<p>The University of Arizona is an EEO/AA - M/W/D/V&nbsp;Employer.\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/1008/", 
+            "published": "2011-03-01 04:41:42"
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Django Developer for Real-Time Stock Market Startup", 
+            "summary": "<p><strong>Santa Monica, California </strong></p>\n\n<p>We're a startup in Santa Monica looking for a Django developer to add to our team. We can't say much, but the product is a real-time platform for the stock trading community. Because of the real-time nature of the platform, you'll get an opportunity to work with some really cool technologies. Our offices are on the beach of Santa Monica, but you're welcome to work mostly from home if you&nbsp;prefer.\n</p>\n<p>We're looking for self-taught self-starters. You must have the ability to pickup new technologies quickly. We are not micro-managers, so we need people who can take the bull by the&nbsp;horns.\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/1007/", 
+            "published": "2011-02-23 04:48:02"
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Django Web Developer", 
+            "summary": "<p><strong>Washington D.C., District of Columbia (required on-site)</strong></p>\n\n<p>The Washington Times is looking for a solid Django Web Developer. A successful candidate will have advanced, documented Django experience, excellent communication skills, be able to work in a team environment, loves using opensource technology, and keeps up with current trends in Web development. You would be joining a small team of Django enthusiasts who have opensourced dozens of projects (check out washingtontimes on git). This position is &#8220;local&#8221; to Washington, DC&nbsp;area.\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/1005/", 
+            "published": "2011-02-18 23:08:50"
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Django/Python Developer, Web & Apps", 
+            "summary": "<p><strong>Pasadena, California (required on-site)</strong></p>\n\n<p>The Django/Python Web Developer will work closely with the technical and editorial staff to aid in the creation, production and maintenance of digital initiatives for 89.3 KPCC Southern California Public Radio (<a href=\"http://KPCC.org\">KPCC.org</a>).  He/She works in a creative and technical capacity to build and maintain underlying and top-level systems that support high-volume digital content distribution for KPCC public radio audiences. Candidate will work in a hands-on capacity to build and maintain KPCC websites and online tools. The Django/Python Web Developer works on a variety of digital media platform products including websites, iPhone apps, mobile websites, blogs, streaming and downloadable audio and video services, RSS feeds, podcasts, wikis, e-mail newsletters, and more.  Candidate will report to the Sr. UX&nbsp;Designer.\n</p>\n<p>Southern California Public Radio (SCPR) is a member-supported public radio network that operates several radio stations in and around Los Angeles. Reaching more than 600,000 listeners every week, SCPR is the most listened to public radio news service of any kind in Southern California and serves the diverse communities of Southern California with award winning local news coverage as well as the most NPR (National Public Radio) content available anywhere in the region. Online at <a href=\"http://www.kpcc.org\">www.kpcc.org</a>.\n</p>\n<p><strong>Position&nbsp;Responsibility:</strong>\n</p>\n<ul>\n <li>\n     Responds to daily production priorities and Web development requests defined and assigned by the Sr.&nbsp;UX-Designer.\n </li>\n\n <li>\n     Works in conjunction with designer, programmers, and producers to create and support systems which allow digital and broadcast staff to build, maintain and deliver online content via a broad range of vehicles, including websites, mobile devices, streaming and downloaded media, newsletters, podcasts,&nbsp;etc.\n </li>\n\n <li>\n     Checks work for CSS and HTML accuracy and browser&nbsp;compatibility.\n </li>\n\n <li>\n     Stays current with emerging trends in digital media to ensure the organization uses the latest&nbsp;technologies.\n </li>\n\n <li>\n     Contributes to the vision and planning of activities to advance Southern California Public Radio's digital&nbsp;platforms\n </li>\n\n <li>\n     Performs other duties as&nbsp;assigned\n </li>\n</ul>\n<p><strong>Required Education and&nbsp;Experience:</strong>\n</p>\n<ul>\n <li>\n     Bachelor's Degree or equivalent experience in computer science, journalism, media, communications, design and/or equivalent&nbsp;experience.\n </li>\n\n <li>\n     Experience in web development with HTML/CSS mastery and fluency in&nbsp;Python.\n </li>\n\n <li>\n     Experience with a full-stack MVC web framework (we use&nbsp;Django)\n </li>\n\n <li>\n     Experience with development of MySQL database-driven&nbsp;websites.\n </li>\n\n <li>\n     Experience with streaming and downloadable media formats and&nbsp;systems.\n </li>\n</ul>\n<p><strong>Required Skills, Knowledge and&nbsp;Abilities:</strong>\n</p>\n<ul>\n <li>\n     Comfortable on the command&nbsp;line \n </li>\n\n <li>\n     Django/Python&nbsp;mastery\n </li>\n\n <li>\n     Experience with DVCS (we use&nbsp;Git)\n </li>\n\n <li>\n     Ability to work under heavy deadline&nbsp;pressure.\n </li>\n\n <li>\n     Ability to work with little&nbsp;supervision.\n </li>\n\n <li>\n     HTML/CSS mastery, with a Passion for web&nbsp;standards\n </li>\n\n <li>\n     Solid oral and written communication&nbsp;skills.\n </li>\n\n <li>\n     Solid information architecture&nbsp;sensibility.\n </li>\n\n <li>\n     Demonstrated ability to work in an interdisciplinary team&nbsp;environment.\n </li>\n\n <li>\n     Familiarity with communicating technical&nbsp;requirements\n </li>\n</ul>\n<p><strong>Preferred Skills and&nbsp;Experience:</strong>\n</p>\n<ul>\n <li>\n     Experience in working with large-scale, consumer-oriented&nbsp;websites\n </li>\n\n <li>\n     Experience with media&nbsp;sites.\n </li>\n\n <li>\n     Experience with JS frameworks (we use&nbsp;jQuery)\n </li>\n\n <li>\n     Familiarity with basic Linux/Apache&nbsp;maintenance \n </li>\n\n <li>\n     Experience with creating mobile sites and&nbsp;apps\n </li>\n\n <li>\n     Familiarity with public radio a&nbsp;plus.\n </li>\n</ul>\n<p><strong>Physical Demands and Working&nbsp;Conditions:</strong>\n</p>\n<ul>\n <li>\n     Must be able to perform the essential duties of the position with or without reasonable&nbsp;accommodation.\n </li>\n\n <li>\n     Physical Demands:  Required to walk, sit, and stand; reach with hands and arms; balance, stoop, kneel, or crouch; Frequent use of hands for data entry/keystrokes and simple grasping. <br />\n\n </li>\n\n <li>\n     Working Conditions:  Moderate noise level, occasional exposure to prevalent weather&nbsp;conditions.\n </li>\n</ul>\n<p><strong>How to Apply</strong>\n   To apply, email a cover letter and resume to <a href=\"mailto:careers@americanpublicmedia.org\">careers@americanpublicmedia.org</a>, please reference \u201c <em></em>job #186-11, Django/Python Developer, Web &amp; Apps<em></em> \u201d in the&nbsp;subject.\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/1004/", 
+            "published": "2011-02-15 06:24:31"
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Software Developer", 
+            "summary": "<p><strong>Washington D.C., District of Columbia (required on-site)</strong></p>\n\n<p>The Sunlight Foundation, a non-partisan government transparency organization in Washington, DC, is seeking a DC-based web developer to join the Subsidyscope project team. An initiative of Pew\u2019s Economic Policy Group, Subsidyscope (<a href=\"http://subsidyscope.org\">http://subsidyscope.org</a>) aims to raise public awareness about the role of federal subsidies in the economy. This project is a unique opportunity to do work that is both meaningful and technically exciting, and to do so in a great work&nbsp;environment.\n</p>\n<p>The ideal candidate will be very familiar with HTML, CSS, a web development framework like Django or Rails and feel comfortable pursuing research outside of regular programming tasks. Any experience working with large datasets, the command line, MySQL, and VCS are all desirable too. In addition to Subsidyscope work, there will be some time to pursue other projects within the general scope of the Sunlight mission. The position is ideal for someone who is enthusiastic about government transparency and is willing to apply a skillset consisting of research, critical thinking, data analysis and policy considerations to a particular issue. Applicants should send a quick introduction and resume to: <a href=\"mailto:subsidyscope-jobs@sunlightfoundation.com\">subsidyscope-jobs@sunlightfoundation.com</a>.\n</p>\n<p>This is a full-time, on-site position; it is grant-supported. No relocation funding is available. Please, no phone calls. Principals&nbsp;only.\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/1003/", 
+            "published": "2011-02-14 23:37:37"
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Django Web Developer", 
+            "summary": "<p><strong>Carrboro, North Carolina (required on-site)</strong></p>\n\n<p><a href=\"http://www.caktusgroup.com\">Caktus</a> is a growing web agency in the NC Research Triangle (Raleigh, Durham, Chapel Hill) that specializes in the Django web framework.  In the job environment, we value many of the same things we do in our client relationships \u2014 face to face communication, strong team collaboration, and an agile, iterative approach to web application&nbsp;development.\n</p>\n<p>We're strong proponents of open source software and actively participate in a number of communities.  Outside our normal business of creating Django web applications for our clients, we often contribute code and bug fixes, respond to questions on the mailing lists, help triage tickets, and even organize local Django development sprints in the NC Research Triangle area from time to&nbsp;time.\n</p>\n<p>For more information, we encourage you to check out <a href=\"http://www.caktusgroup.com/services/\">what we do</a> and <a href=\"http://www.caktusgroup.com/about/\">meet the team</a>. At Caktus, you'll get to work with some of the best and brightest minds in the Django&nbsp;community.\n</p>\n<p><strong>Job&nbsp;Description</strong>\n</p>\n<p>Caktus is looking for an experienced Django web developer who enjoys working on a team and is excited to work on new and diverse projects. Your work will&nbsp;involve:\n</p>\n<ul>\n <li>\n     Data modeling complex business ideas<br />\n\n </li>\n\n <li>\n     Creating and integrating Django apps in new projects<br />\n\n </li>\n\n <li>\n     Maintaining existing Django projects<br />\n\n </li>\n\n <li>\n     Django deployment <br />\n\n </li>\n</ul>\n\n<h2><strong>Qualifications</strong></h2>\n<ul>\n <li>\n     At least 2 years of experience building dynamic web applications in any&nbsp;language\n </li>\n\n <li>\n     At least 6 months of experience using Python and&nbsp;Django\n </li>\n\n <li>\n     Familiarity with Linux (Debian-flavor) desktop and server&nbsp;environments\n </li>\n\n <li>\n     Deployment experience using Apache and&nbsp;WSGI\n </li>\n\n <li>\n     An appreciation of test driven development and other agile&nbsp;methodologies\n </li>\n\n <li>\n     A strong knowledge of relational databases, such as PostgreSQL or&nbsp;MySQL\n </li>\n\n <li>\n     Proficiency in HTML and&nbsp;CSS\n </li>\n\n <li>\n     Fluency in both written and spoken&nbsp;English\n </li>\n\n <li>\n     Self-motivated and resourceful, with the proven ability to multi-task  and operate successfully under tight deadlines and time&nbsp;pressures\n </li>\n\n <li>\n     Enjoys a fast pace, dynamic, challenging and team-oriented work&nbsp;environment.\n </li>\n</ul>\n\n<h2><strong>Bonus Points&nbsp;For</strong></h2>\n<ul>\n <li>\n     Familiarity with&nbsp;JavaScript\n </li>\n\n <li>\n     Experience with jQuery or another popular front-end JavaScript&nbsp;library\n </li>\n</ul>\n<p>This is a full time position, including benefits, and is based out of our Carrboro, NC&nbsp;office.\n</p>\n\n<h2><strong>How to&nbsp;Apply</strong></h2>\n<p>If you're interested in this position, email your resume, expected compensation, and links to any examples of your work to <a href=\"mailto:jobs+website@caktusgroup.com\">jobs+website@caktusgroup.com</a>. Kindly include a brief note discussing why you think you're a great fit for this&nbsp;opportunity.\n</p>\n<p>Caktus is proud to be an Equal Opportunity&nbsp;Employer.\n</p>\n<p>Salary commensurate with&nbsp;experience.\n</p>\n<p>Confidentiality is&nbsp;ensured.\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/1002/", 
+            "published": "2011-02-14 23:20:48"
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Web Developer (Python with Django)", 
+            "summary": "<p><strong>New York, New York </strong></p>\n\n<p>Theophilus, Inc. is seeking an experienced part-time Web Developer to work on an exciting social recommendation product.\n   Description\n   We are looking for a developer with experience in web-based technologies and web applications development.  We are a funded startup, with a virtual office and flexible working hours, and need somebody who is self-starter and can work with minimum supervision.\n   Must Haves\n   Candidates must have the following skill set:\n   \u2022   Python (2-3 years) and Django framework.\n   \u2022   JavaScript (Jquery), AJAX, JSON, XML, CSS, HTML.\n   \u2022   CMS knowledge (Drupal/Wordpress) is preferred.\n   \u2022   Knowledge of web delivery technologies (e.g., Apache, Tomcat, Lighttpd).\n   \u2022   Development &amp; consumption of HTTP APIs.\n   \u2022   Expert knowledge of Database management technologies (MySql, MongoDB etc).\n   \u2022   Exposure to Linux/Unix operating systems such as Ubuntu or Red Hat.\n   \u2022   Good communication and documentation&nbsp;skills.\n</p>\n<p>Please send resumes to <a href=\"mailto:david.kim@theophilus-inc.com\">david.kim@theophilus-inc.com</a>\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/1001/", 
+            "published": "2011-02-13 03:29:33"
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Python / Django Developer", 
+            "summary": "<p><strong>Ontario, Canada </strong></p>\n\n<p>We are looking for a solid Python/Django developer to join us in continuing development of an early-stage web-application. We\u2019ve been building web-apps for various business clients for a few years now and business is growing. These applications are business oriented; this typically means a lot more tables and graphs mixed in with some other communication hardware, rather than posting photos and comments - although those can be useful at times. If you have an eye for detail and enjoy some interesting technical challenges this just might be the job for&nbsp;you.\n</p>\n<p>Some ideal skills include:\n   * Thorough experience with Python, Django, and Postgresql.\n   <em> Your skills with Javascript will be put to use, mostly with jQuery and OpenLayers.\n</em> Having a good eye for design and efficient UIs, and certainly a well formatted CSS should not be a&nbsp;problem.\n</p>\n<p>As mentioned above, this is an early-stage application, still considered alpha. However, we have some eager customers that are testing it out and putting it to use. But there\u2019s lots of work to be done. This particular project deals heavily with GPS mapping and datatables. Plenty of Javascipt and Ajax&nbsp;calls. \n</p>\n<p>We have consistent, full-time work for at least one developer at the moment. We would like to start off on a contract basis, and if things go well hopefully move you to a permanent position. Remote work is what we\u2019re looking for - really, who needs office space when you can function virtually. Good communication via e-mail, phone, Skype, etc. is&nbsp;needed.\n</p>\n<p>Please only contact us if your able to code yourself, we\u2019re not interested in working with development firms or outsourcing at this&nbsp;time.\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/1000/", 
+            "published": "2011-02-10 23:53:10"
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Web Software Developer", 
+            "summary": "<p><strong>Victoria, Texas (required on-site)</strong></p>\n\n<h1>Job&nbsp;Description:</h1>\n<p>Victoria Advocate Publishing Co. is seeking a Software Developer with significant experience in developing cutting-edge web sites and applications, preferably on an open-source (LAMP-style) platform. This position will be part of the award winning Advocate Digital&nbsp;team.\n</p>\n\n<h1>Requirements:</h1>\n<p>We are looking for candidates with a minimum of three years experience developing on the web with dynamic languages; excellent teamwork abilities; strong conceptual and problem solving skills; understanding of different platforms, browsers and other relevant internet technologies; working knowledge of information architecture concepts; and relentless attention to detail. Ideal candidates will have a strong dedication to web standards and web development best practices, including extensive experience with database-backed&nbsp;development.\n</p>\n<p>We support and participate in the development of the Django web framework. Strong preference will be given to candidates with Django framework experience. However, we will train the right person who demonstrates passion for their work and a willingness to learn. This position will develop, support, and maintain our \u201cEllington\u201d content management platform installation, in-house developed Django sites, other new projects and diversification efforts as&nbsp;specified.\n</p>\n\n<h1>About the&nbsp;company:</h1>\n<p>Advocate Digital is the award-winning web development division of the Victoria Advocate Publishing Co, a communications and media company based in Victoria, Texas. \n   We offer an excellent benefits package including medical insurance, 401k, paid time off and more! Background check and pre-employment drug screen&nbsp;required.\n</p>\n<p>To apply submit a cover letter, resume and salary requirements to <a href=\"mailto:towen@vicad.com\">towen@vicad.com</a>. Applications without salary requirements will not be considered. No agencies please.&nbsp;EOE\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/999/", 
+            "published": "2011-02-08 02:00:32"
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Senior Developer/Programmer", 
+            "summary": "<p><strong>Pasadena, California (required on-site)</strong></p>\n\n<p>The Company:\n   Remarketing of America, <a href=\"http://www.remarketing-usa.com\">www.remarketing-usa.com</a> established in 2004 is a dynamic company that has captured the attention of the Financial Services industry as a result of its' innovative programs that produce &#8220;bottom-line&#8221;\n   financial savings for our clients as well as provide unparalleled service levels.  Our company runs lean and demands efficient processes, the ability to adapt to change while providing exceptional customer service.<br />\n\n</p>\n<p>What We Need:\n   We are in immediate need of a back-end developer highly proficient in Python.  Direct Django experience is preferred however we will consider candidates with one or more modern MVC framework experience such as a Sr.\n   Rails and Ruby or Perl&nbsp;Developer.\n</p>\n<p>If you have a passion for technology and thrive in a highly entrepreneurial environment this is the job for you.  As part of our development team you will be collaborating with other developers on the team to enhance, maintain, troubleshoot and fix issues that arise with current&nbsp;applications.\n</p>\n<p>The ideal candidate will be a technically competent, hands-on self starter with strong communication skills. He/she must thrive in a fast-paced, dynamic environment.  Our ideal candidate is a really good generalist, detailed oriented, precise and practical about solving and managing everyday engineering challenges.   This is a full time position and you must be able to work on-site. I thought this was the number one stumble&nbsp;block?\n</p>\n<p>You should have a solid understanding of Python and Django or other modern MVC framework.  We would like to see code samples that demonstrate the above.  Please keep your code DRY as possible.  You should have a working knowledge of git or similar DVCS (we use git and <a href=\"http://github.com\">github.com</a> for our projects).  Ideal candidate will enjoy working in a team&nbsp;environment.\n</p>\n<p>What To Expect:\n   You should be comfortable in a *NIX environment and should have experience deploying production sites. We use Ubuntu 10.4 LTS, Nginx/Apache/modwsgi, PostgreSQL and Django 1.2.x as our default deployment environment for new projects, so you'll be working with the latest and greatest. We do our best to have weekly developer meetings where we discuss new technology and how it might fit into our deployment stack, sharing best practices, etc. We encourage contributing back to the open source&nbsp;community.\n</p>\n<p>Nice To Have:\n   Familiarity with Satchmo, django-cms, Haystack and the Django reusable app eco-system in general. Any sysadmin skills you can bring to the table would be a definite plus (installing, configuring and troubleshooting our deployment&nbsp;stack).\n</p>\n<p>What You Get:\n   We offer a competitive salary, benefits package and 401K&nbsp;program.\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/998/", 
+            "published": "2011-02-08 01:24:59"
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Django/Python Developer for Men's Lifestyle Q&A Community - Still available.", 
+            "summary": "<p><strong>West Hollywood, California </strong></p>\n\n<p>We are looking for a competent Django developer to help develop a Q&amp;A community that is built on Askbot, an open-source Q&amp;A platform. The site is already live at <a href=\"http://realpha.com\">realpha.com</a>. Any candidate wishing to apply should possess the following&nbsp;qualities:\n</p>\n<p>Necessary:\n</p>\n<ul>\n <li>\n     Fluency in&nbsp;Python\n </li>\n\n <li>\n     Experience with Django, or similar python-based web&nbsp;framework\n </li>\n\n <li>\n     Experience with&nbsp;Git\n </li>\n\n <li>\n     Solid CS fundamentals, preferably with a CS&nbsp;degree\n </li>\n\n <li>\n     Excellent communication abilities, especially with progress&nbsp;updates\n </li>\n\n <li>\n     Reliable and punctual, making every effort possible to stick to agreed&nbsp;deadlines\n </li>\n\n <li>\n     Available to work 15-20 hours/week maximum, 5-10 hours more&nbsp;typically\n </li>\n\n <li>\n     Complete fluency in written and spoken&nbsp;English\n </li>\n</ul>\n<p>Nice-to-haves:\n</p>\n<ul>\n <li>\n     Familiarity with Askbot, OSQA or another Q&amp;A&nbsp;platform\n </li>\n\n <li>\n     HTML/CSS and/or web design&nbsp;experience\n </li>\n\n <li>\n     Familiarity working with outside APIs (eg Facebook), or ability to learn&nbsp;rapidly\n </li>\n\n <li>\n     Interest in all aspects of male personal&nbsp;development\n </li>\n</ul>\n<p>We are based in Los Angeles, but open to hiring a remote developer. Compensation will be commensurate with experience, and there is a strong possibility of the position leading to a significant equity stake in the&nbsp;company.\n</p>\n<p>Candidates wishing to apply should email their resumes as attachments (.pdf is preferred) with a brief cover letter in the body of the email, their preferred rate, and up to three samples of previous development work, if available. Please put \u201cRealpha Developer\u201d in the subject&nbsp;line.\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/996/", 
+            "published": "2011-02-06 22:26:14"
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Freelance Django web developer", 
+            "summary": "<p><strong>Camberwell, United Kingdom (required on-site)</strong></p>\n\n<p>d3 Website Contract&nbsp;Specification\n</p>\n<p>United Visual Artists is requesting tenders for a short-term web-development contract to create a new website for our d3&nbsp;product.\n</p>\n<p>We are accepting tenders for <a href=\"http://uva.co.uk/webdev/django/\">Django</a> implementation and <a href=\"http://uva.co.uk/webdev/wordpress/\">Wordpress</a>.\n</p>\n<p>Location:\n   United Visual Artists Ltd.\n   Units B &amp; D\n   127-129 Great Suffolk Street\n   London SE1 1PP\n   United&nbsp;Kingdom\n</p>\n<p>Project&nbsp;scope:\n</p>\n<pre><code>* Setup a product site, consisting of\n      - news blog\n      - forums\n      - contact form\n      - user authentication / authorisation capabilities\n      - updateable faqs\n      - support tickets\n      - links to existing internally hosted documentation website\n* Visually and functionally match a proposed site design\n* Compliant with current web browsers (Chrome, Safari, Firefox, IE8 +) and standards\n* Searchable and findeable within Google, Bing etc\n* Document setup and customisations\n</code></pre><p>Bidder&nbsp;requirements:\n</p>\n<pre><code>* strong HTML / CSS experience\n* relevant implementation platform experience\n* wo use existing modules and systems with minimal customisation\n* will tender time / cost estimates\n* developer will be on-site at UVA&amp;#39;s office at Borough, London for main phase of site creation and interaction development\n</code></pre><p>Layout\n</p>\n<p>An initial layout design can be downloaded <a href=\"http://www.uva.co.uk/webdev/d3_site.pdf\">here</a>\n</p>\n<p>About&nbsp;d3:\n</p>\n<p>d3 is a production tool for live shows, television production and sculptural media installations. It combines a real time 3D stage simulator, sequencing timeline, media server and 3D image mapping abilities. d3 is used globally in disciplines ranging from concert touring, theatre, tv-shows and permanent architectural installations. Examples of artists currently using d3 in their shows are U2, Jay-Z and Massive Attack.\n   d3 is a product by United Visual&nbsp;Artists.\n</p>\n<p><a href=\"http://www.d3.uva.co.uk\">d3</a>\n</p>\n<p>About&nbsp;UnitedVisualArtists:\n</p>\n<p>United Visual Artists are a London-based collective whose current practice spans permanent architectural installation, live performance and responsive installations. Research and development is a core part of our process.\n   We work on a diverse and expanding range of projects&nbsp;worldwide.\n</p>\n<p><a href=\"http://www.uva.co.uk\">uva</a>\n</p>\n<p>Contact:\n</p>\n<p>Please email Judith Hornman with your CV and portfolio (or links to work/website) \u2014 <a href=\"mailto:webdev@uva.co.uk\">webdev@uva.co.uk</a>\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/995/", 
+            "published": "2011-02-04 19:29:35"
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Agile Developers Based in the Sunny Mediterranean", 
+            "summary": "<p><strong>Malta (required on-site)</strong></p>\n\n<p>We are looking for software developers to join our team of talented programmers. Located in sunny Malta (a European Union country at the heart of the Mediterranean) our modern offices are packed with positive and talented people with a passion for building what we know are the best consumer systems tools in the World. Using agile software development principles, you will be using Python, Django and PostgreSQL to develop the high performance websites and Windows utilities that are used by hundreds of thousands of our&nbsp;customers. \n</p>\n<p>Your key&nbsp;responsibilities:\n</p>\n<ul>\n <li>\n     Developing the code underlying our products and&nbsp;websites.\n </li>\n\n <li>\n     Becoming expert in Python, Django and&nbsp;PostgreSQL.\n </li>\n\n <li>\n     Working with the team to improve our agile software development&nbsp;practices.\n </li>\n\n <li>\n     Increasing the knowledge of the team by self-development or mentoring as&nbsp;required.\n </li>\n</ul>\n<p>Your skills and&nbsp;experience:\n</p>\n<ul>\n <li>\n     Several years of software development experience and demonstrated expertise in a particular&nbsp;language.\n </li>\n\n <li>\n     Knowledge of Python, Django and PostreSQL would be viewed favourably, but is not essential, as training will be&nbsp;provided.\n </li>\n\n <li>\n     Ideally, knowledge of Agile software&nbsp;development.\n </li>\n\n <li>\n     A University level of education in mathematics, a science, engineering or another technical&nbsp;field.\n </li>\n\n <li>\n     Practical knowledge of developing system utilities in C, or C++, would be&nbsp;useful.\n </li>\n</ul>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/994/", 
+            "published": "2011-02-03 15:28:39"
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Web Developer for WN Network", 
+            "summary": "<p><strong>Singapore </strong></p>\n\n<p><em>Experienced Talented&nbsp;Programmers:</em> \n</p>\n<p>Confident experienced programmers, looking for long term commitment to developing and managing online&nbsp;projects. \n</p>\n<p>Responsibilities include developing back end structure for websites including: <a href=\"http://www.dubai.com\">www.dubai.com</a> <a href=\"http://www.wn.com\">www.wn.com</a> \n</p>\n<p>Job Location: Home based /&nbsp;Worldwide\n</p>\n<p>Requirements:\n   Python and Django: minimum 2 years of experience; Experience with any of the major sql services: MySQL or PostgreSQL; Information retrieval systems: Xapian/Solr/other; Client side technologies and frameworks: Javascript/JQuery; xHTML;&nbsp;CSS2/3\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/992/", 
+            "published": "2011-02-03 00:27:58"
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Web Developer (Python/Django)", 
+            "summary": "<p><strong>Zurich, Switzerland (required on-site)</strong></p>\n\n<p>Divio is based in Zurich, Switzerland and was founded in the year 2001. Since then it has become a full-service web agency working for national and international clients. We create modern functional and impressive internet presences based on state-of-the-art&nbsp;technologies.\n</p>\n<p>To extend our young and dynamic team we are looking for&nbsp;a\n</p>\n<p><strong>WEB DEVELOPER&nbsp;(80-100%)</strong>\n</p>\n<p><em>What you&nbsp;need:</em>\n</p>\n<ul>\n <li>\n     Very good expertise in Python/Django or other web frameworks (i.e. Ruby on&nbsp;Rails)\n </li>\n\n <li>\n     Familiar using Eclipse and&nbsp;GIT\n </li>\n\n <li>\n     Good expertise in Javascript (jQuery) is a&nbsp;benefit\n </li>\n\n <li>\n     Expertise in HTML/CSS&nbsp;advantageous\n </li>\n\n <li>\n     Ability to work independently, team skills, ability to cope with pressure and high&nbsp;reliability\n </li>\n\n <li>\n     Very good knowledge of spoken and written English (German&nbsp;advantageous)\n </li>\n</ul>\n<p>We can offer you exciting and interesting projects for first class customers, a well-established team of energetic and creative employees and a pleasant working environment in the heart of&nbsp;Zurich.\n</p>\n<p>We are also the lead developers behind the open source projects <a href=\"http://www.django-cms.org\">http://www.django-cms.org</a> and <a href=\"http://www.django-shop.org\">http://www.django-shop.org</a>. Check out: <a href=\"https://github.com/divio\">https://github.com/divio</a>\n</p>\n<p>Have we sparked your interest? Then don't hesitate and apply now with your CV and code examples (preferably with links to your github, bitbucket or other repositories). We're looking forward to hearing from&nbsp;you.\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/990/", 
+            "published": "2011-01-31 19:53:02"
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Agile Python Developer", 
+            "summary": "<p><strong>London, United Kingdom (required on-site)</strong></p>\n\n<p>As the world\u2019s largest online prescription eyewear store, Glasses Direct (<a href=\"http://www.glassesdirect.co.uk\">www.glassesdirect.co.uk</a>) offer the same high quality glasses you\u2019ll find on the high street at much more affordable prices online. They are transforming the eyewear industry through operating on low overheads and passing the saving back to the public. A recent customer survey established that they save an average of 68% compared to their last pair bought from a high street optician.Glasses Direct make choosing glasses fun and convenient through leading ecommerce innovations.<br />\n\n</p>\n<p>Join a team of Python developers to build and extend a Django-based application, and Python-based interfaces to fulfilment systems. You will deliver high quality software following an agile development process. The ideal candidate will be good a self starter and like the idea of team-owned code; clean, maintained, well tested, and readable. You will also be required to follow best practice in Python and Javascript, and care about the code&nbsp;written.\n</p>\n<p>Responsibilities\n   * Be a key member of a team delivering high quality applications in Python.\n   <em> Working with product modellers, testers, and developers from various technology backgrounds\n</em> Helping to establish best development practice in the&nbsp;team.\n</p>\n<p>Requirements\n</p>\n<p>Essential\n   * Extensive experience with object-oriented Python in a production environment.\n   <em> Experience and knowledge of Python\n</em> Rich understanding of OO and design patterns.\n   <em> Independent problem solving skills\n</em> Ability to write code that scales well, and reads well.\n   <em> Understanding of how the web works, from HTML to HTTP.\n</em> Flexibility: we're a small team, but we move quickly.\n   <em> Embrace agile software engineering; TDD, Continuous Integration\n</em> Relevant Bachelors' degree or equivalent industry&nbsp;experience.\n</p>\n<p>Desirable\n   * Previous commercial experience with e-commerce systems\n   <em> Interest and experience with CSS and Javascript\n</em> Experience with Test Driven Development practices in Python.\n   <em> Any commercial experience of python web frameworks, esp Django\n</em> Linux Shell&nbsp;Experience.\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/989/", 
+            "published": "2011-01-27 22:56:26"
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Application Developer", 
+            "summary": "<p><strong>London, United Kingdom (required on-site)</strong></p>\n\n<p>Busy, vibrant localization company looking for an Application Developer to join our small dynamic IT services team. If you\u2019re excited by the opportunity to work with cutting-edge technologies, to be part of an environment where you have the chance to test and grow your skills, and where your ideas can have a real contribution to the way we work, then we\u2019d love to hear from&nbsp;you.\n</p>\n<p>As an integral part of our development team, you\u2019ll get exposure to a range of projects, using a wide scope of technologies: from web development using Django/Python, creating rich client-side experiences with Javascript, and utilizing the power and flexibility of C#/.NET to drive some of our industry-leading&nbsp;tools.\n</p>\n<p>You should be a team player with a flexible, proactive attitude \u2013 unafraid to innovate and try something new, and excited by the chance to deliver. As a key part of a fast-moving team, you\u2019ll need excellent organizational, time management and communication skills. You\u2019ll be working directly with our technical lead, in an open environment with some of the best in the business, getting the opportunity to make a real independent contribution from day&nbsp;one.\n</p>\n<p>This position is ideal for a candidate with 1-2 years' work experience and who\u2019s looking to broaden their skills.\n   Relevant experience would include:\n   \u00b7Django / Python\n   \u00b7C# / .NET\n   \u00b7Javascript, CSS, HTML\n   \u00b7Experience with SQL-based RDBMS, particularly PostgreSQL\n   With knowledge of the following an advantage:\n   \u00b7Experience of integrating with third party applications\n   \u00b7XML\n   \u00b7JSON\n   \u00b7WinForms\n   \u00b7Version Control&nbsp;Systems\n</p>\n<p>Skills and attributes\n   \u00b7Proactive, positive and innovative in seeking new solutions and processes \n   \u00b7Strong analytical skills and logical reasoning ability \n   \u00b7Ability to work in a dynamic environment, multi-task &amp; prioritize on a moving basis \n   \u00b7Excellent oral and written communication&nbsp;skills \n</p>\n<p>The position is available&nbsp;immediately.\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/988/", 
+            "published": "2011-01-27 21:53:34"
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Sr. UX Designer-Developer, Web & Apps", 
+            "summary": "<p><strong>Los Angeles, California </strong></p>\n\n<p>Sr. UX Designer-Developer, Web &amp;&nbsp;Apps\n</p>\n<p>Southern California Public Radio (SCPR) is a member-supported public radio network that operates 89.3 KPCC-FM in Los Angeles and Orange County, 89.1 KUOR-FM in the Inland Empire and 90.3 KPCV in the Coachella Valley. Reaching more than 600,000 listeners every week, SCPR is the most listened to public radio news service of any kind in Southern California and serves the diverse communities of Southern California with award winning local news coverage as well as the most NPR (National Public Radio) content available anywhere in the&nbsp;region.\n</p>\n<p>SCPR's flagship station, KPCC, has garnered over 200 journalistic honors including 3 Distinguished Radio Journalist awards (from the Greater LA Chapter of the Society of Professional Journalists) and the 2008 top honor for Breaking News from the LA Press Club. SCPR also features signature public radio programs from American Public Media, the BBC and Public Radio International. Listeners around the globe can access news, join blogs, download podcasts, as well as hear a live web stream at <a href=\"http://www.scpr.org\">www.scpr.org</a>.\n</p>\n<p>Our workplace is as dynamic as our programming!  Diverse, creative and compelling doesn't just describe what we do, but also who we are.  We tap into the life experiences of our employees for perspective and balance.  In addition to pursuing your talents in a creative, energetic workplace, you'll discover competitive pay and benefits, a culture that encourages learning and development, and opportunities for advancement.  A career at Southern California Public Radio is your opportunity to inspire - and to be&nbsp;inspired.\n</p>\n<p>Position&nbsp;Summary:\n</p>\n<p>The Senior UX Designer/Front-End Developer is responsible for creating a distinctive visual/interaction design for KPCC websites, niche sites, mobile sites and mobile applications which complements the public radio on-air sound and identity. This position rapidly visualizes information presentation for the web (and portable devices) and turns that vision into a functional prototype. The Sr. Designer-Developer supervises two Web Developers.  In addition to working with his/her staff, this positions works in a fluid environment with a far-flung team of editors, bloggers, developers, partners and business stakeholders to design and build a technology solution that enables the exploration of what local news in the public media space can&nbsp;become.\n</p>\n<p>Position&nbsp;Responsibility:\n</p>\n<pre><code>* Develop the information architecture and visual/interaction design for websites, apps, and digital channels\n* Create a desktop and mobile site experience that focuses on the user&amp;#39;s interests and needs, while also maximizing production efficiency for content creators\n* Lead internal and external project teams including content editors and technologists to crystallize a user experience strategy and deliver working design updates, prototypes, mobile sites and apps which integrate with our existing Django/Python web development framework\n* Conceptualize and produce visually rich interfaces that attract audience interaction, convey stories and ideas, attract new audiences, and help the organization reach its online revenue goals.\n* Manage design and development projects (websites, mobile apps, newsletter, special projects) from conception through execution, including presentation, iteration, and build-out phases.\n\n* Hire, supervise, train and manage direct staff through coaching, mentorship, performance meetings and on-going feedback.  Involve HR on performance issues as needed.\n* Foster a creative and productive work environment.  Create development opportunities and individualized development plans for staff and training to enhance skills and foster growth.\n* Establish, document, and maintain visual styles, methods, and procedures\n* Work with other key members of various digital teams to develop and execute usability testing on Web sites.\n* Maintain an awareness of digital design and development trends and regularly implements new visual approaches to the Web sites.\n* Collaborate with other groups within the organization to establish, maintain and extend visual branding standards across all communications channels.\n* Other duties as assigned\n</code></pre><p>Required Education and&nbsp;Experience:\n</p>\n<pre><code>* Undergraduate or graduate degree from an accredited four-year college or university or equivalent in design or technology\n* 5+ years experience as a key member of a user experience team for a consumer-oriented media/news website or design agency, with at least three years experience in a project management role.\n* Supervisory/management experience is required - must demonstrate an ability to foster high standards and an ability to coach, inspire and lead. \n* Design, usability, and technical experience in developing site maps, wireframes, visual design concepts, and working prototypes for database-driven web sites and mobile apps.\n* Extensive experience with rapid prototyping\n* Experience with one or more content management systems\n* Experience in user analysis, usability testing requirements analysis, and functional specifications\n* Significant web design experience taking projects from concept to code\n* Experience creating mobile apps for iPhone, iPad, or Android\n* Experience with collaboration tools like Google Docs and Basecamp\n</code></pre><p>Required Skills, Knowledge and&nbsp;Abilities:\n</p>\n<pre><code>* Passion for presentation, disruptive technologies and unbound curiosity for how news, technology, and people come together. \n* Ability to create beautiful designs and transform them into working, functional websites and applications.\n* Great eye for user-centered design and information architecture with strong hands-on development skills.\n* Attention to detail that is evident in both the designs and the resulting code. \n* Self-starter who has the attitude that anything is possible.\n* Compelling portfolio of past projects.\n* Able to strike the right balance between working autonomously and demonstrating personal initiative on the one hand, and collaborating as a team player at a departmental, divisional and/or inter-divisional level.\n* Able to act as a bridge between editorial and development teams\n* Supervisory skills and ability to recruit, coach and develop talent\n\n* Leadership and personnel skills and ability to inspire and lead the staff.\n* Highly skilled at Photoshop, Illustrator, HTML5, CSS3, and Javascript\n* Strong coding ability is a must. Our web development framework is Python/Django.\n* Mobile development experience with Objective-C or Java\n* Ability to adapt to shifting priorities\n* Strong multi-tasking capability\n* Strong collaboration and communication skills, both verbal and written\n* Strong leadership capability\n* Social media API knowledge\n* Understanding of Google Analytics, Webtrends, Comscore, and similar statistics packages\n* Strong understanding of web standards, accessibility and best practices\n</code></pre><p>Preferred Skills and&nbsp;Experience:\n</p>\n<pre><code>* Experience with rapid &amp;amp; iterative development cycles (e.g., agile and extreme programming) highly desirable\n* Prior experience at a news organization or a design agency serving clients in the news industry\n* Database/PHP experience a plus\n* Experience with Drupal a plus\n* Facebook, YouTube, and Twitter API integration and application development a plus\n* Video editing experience using Final Cut Pro helpful\n* Passion for innovative products &amp;amp; technologies, and open-source projects\n</code></pre><p>Reporting To This Position:  Full-time Web Developer, 1 Part-time Web&nbsp;Developer\n</p>\n<p>To apply, please visit: <a href=\"http://americanpublicmedia.publicradio.org/careers/job_postings.php\">http://americanpublicmedia.publicradio.org/careers/job_postings.php</a>\n</p>\n<p>and reference job # 178-11, Sr. UX Designer-Developer, Web &amp;&nbsp;Apps.\n</p>\n<p>Southern California Public Radio is an Equal Opportunity Employer.  We encourage candidates with a diversity of life experiences to&nbsp;apply. \n</p>\n<p>Enrich your mind. Build your&nbsp;community.\n</p>\n<p>Expand your&nbsp;career.\n</p>\n<p><a href=\"http://www.americanpublicmedia.org/careers\">www.americanpublicmedia.org/careers</a>\n</p>\n<p>Follow us on&nbsp;Twitter:\n</p>\n<p><a href=\"http://twitter.com/APMJobs\">http://twitter.com/APMJobs</a>\n</p>\n<p>Apply Here: <a href=\"http://www.Click2Apply.net/cqnwjh2\">http://www.Click2Apply.net/cqnwjh2</a>\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/987/", 
+            "published": "2011-01-27 04:39:21"
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Experienced Django Developer", 
+            "summary": "<p><strong>Loughborough, United Kingdom </strong></p>\n\n<p>Our company develops and manages online loyalty point platforms for a range of clients including Andrex, McVitie\u2019s and Appletiser. We also operate our own consumer site: <a href=\"http://www.coinks.com\">http://www.coinks.com</a>. An opportunity has now arisen for a Django / Python Web Developer to join our&nbsp;team. \n</p>\n<p>This role offers a top developer with good knowledge of Django and Python the chance to work on exciting projects on behalf of some high profile&nbsp;clients. \n</p>\n<p>As a Django / Python Web Developer, you will be responsible for working on the company\u2019s consumer-facing websites for our loyalty network. Your position will involve developing new features, maintenance and administration of web&nbsp;servers. \n</p>\n<p>Your duties will&nbsp;include:\n</p>\n<ul>\n <li>\n     technical maintenance of the websites, servers and&nbsp;databases\n </li>\n\n <li>\n     developing new&nbsp;functionality \n </li>\n\n <li>\n     testing new and existing&nbsp;functionality\n </li>\n\n <li>\n     providing technical assistance to internal staff and troubleshooting technical&nbsp;problems\n </li>\n</ul>\n<p>You will also be involved in the daily monitoring of the company web servers and eliminating the causes of code&nbsp;errors.\n</p>\n<p>To be considered for this position, you must have development experience and knowledge of the&nbsp;following: \n</p>\n<ul>\n <li>\n     Django web&nbsp;framework\n </li>\n\n <li>\n     Python\n </li>\n\n <li>\n     HTML\n </li>\n\n <li>\n     JavaScript\n </li>\n\n <li>\n     Database management using&nbsp;MySQL\n </li>\n\n <li>\n     Linux operating systems and Apache web&nbsp;servers\n </li>\n</ul>\n<p>In addition, you should be well organised, able to manage your workload and be willing to tackle new and varied&nbsp;projects.\n</p>\n<p>We are seeking a UK based developer, ideally located within 2 hours travel from our headquarters near Loughborough in Leicestershire. Daily attendance on-site is not necessary and the position can be home based. However, regular visits to the office will be&nbsp;expected.\n</p>\n<p>The position is a permanent role, although applications from freelance contractors who can commit to longer terms such as 6-12 months will be&nbsp;considered.\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/985/", 
+            "published": "2011-01-26 17:16:31"
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Django Jobs", 
+            "title": "Freelance Developer - legacy odbc sync", 
+            "summary": "<p><strong>Buena Park, California </strong></p>\n\n<p>Greetings.\n   We wrote an app for syncing a legacy database. The client stalled, we moved to the next gig, the client called and wants it finished asap, we need some backup to help us get this patched and working.\n   We wrote it from scratch, we will be available and help.\n   We want a long term relationship, but we want you to be freelance at this time. If you want a permanent job we can discuss it after we get over this gig.\n   Do you know Django. Do you know how to form a manual SQL call using the 'odbc'&nbsp;library?\n</p>\n<p>That's it. Now this particular app also uses multiprocessing.Process but you don't really need to understand that because it is already written. \n   We need the sync calls to be examined and validated. There is a Purchase Order creator which needs to be finished. The biggest challenge with this app was that the ODBC connector is legacy and sometimes sends garbage, we delt with that and many other issues already. We need a polish on this app right this&nbsp;second.\n</p>\n<p>If I personally were to work on the gig, i suggest a week or two. Thus I suggest that you will be either a lot faster than I am, or it would take you slightly longer than it would&nbsp;me.\n</p>\n<p>Long term, we are a Django development company and we want to grow.\n   We don't care where your physical body is, just that you know your&nbsp;Django.\n</p>\n<p>All billing to clients is in 15 minute increments with a brief explanation of each. This simply means you need to journal as you&nbsp;go.\n</p>\n<p>Pay is flexible, we need help now. Method of payment is 100% up to you.\n   Timeframe is&nbsp;now.\n</p>", 
+            "is_read": false, 
+            "link": "http://djangogigs.com/gigs/984/", 
+            "published": "2011-01-25 23:09:12"
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Full Disclosure", 
+            "title": "Cross-Site Scripting vulnerability in Nagios", 
+            "summary": "<p>Posted by sschurtz () t-online de on Mar 10</p>Advisory:           Cross-Site Scripting vulnerability in Nagios<br />\nAdvisory ID:        SSCHADV2011-002<br />\nAuthor:             Stefan Schurtz<br />\nAffected Software:  Successfully tested on: nagios-3.2.0 / nagios-3.2.3<br />\nVendor URL:         <a href=\"http://www.nagios.org\" rel=\"nofollow\">http://www.nagios.org</a><br />\nVendor Status:      0000207: Cross-Site Scripting vulnerability in Nagios<br />\nCVE-ID:             -<br />\n<br />\n==========================<br />\nVulnerability Description:<br />\n==========================<br />\n<br />\nThis is Cross-Site...<br />", 
+            "is_read": false, 
+            "link": "http://seclists.org/fulldisclosure/2011/Mar/145", 
+            "published": "2011-03-10 21:26:03"
+        }
+    }, 
+    {
+        "pk": 52, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Full Disclosure", 
+            "title": "Cross-Site Scripting vulnerabilities in Icinga", 
+            "summary": "<p>Posted by sschurtz () t-online de on Mar 10</p>Advisory:           Cross-Site Scripting vulnerabilities in Icinga<br />\nAdvisory ID:        SSCHADV2011-001<br />\nAuthor:             Stefan Schurtz<br />\nAffected Software:  Successfully tested on: icinga-1.3.0 / icinga-1.2.1<br />\nVendor URL:         <a href=\"http://www.icinga.org\" rel=\"nofollow\">http://www.icinga.org</a><br />\nVendor Status:      fixed csv export link to make it XSS save (IE) #1275<br />\nCVE-ID:             -<br />\n<br />\n==========================<br />\nVulnerability Description:<br />\n==========================<br />\n<br />\nThis is Cross-Site...<br />", 
+            "is_read": false, 
+            "link": "http://seclists.org/fulldisclosure/2011/Mar/144", 
+            "published": "2011-03-10 21:24:45"
+        }
+    }, 
+    {
+        "pk": 53, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Full Disclosure", 
+            "title": "[SECURITY] [DSA 2189-1] chromium-browser security\tupdate", 
+            "summary": "<p>Posted by Giuseppe Iuculano on Mar 10</p>-------------------------------------------------------------------------<br />\nDebian Security Advisory DSA-2189-1                   security () debian org<br />\n<a href=\"http://www.debian.org/security/\" rel=\"nofollow\">http://www.debian.org/security/</a>                         Giuseppe Iuculano<br />\nMarch 10, 2011                         <a href=\"http://www.debian.org/security/faq\" rel=\"nofollow\">http://www.debian.org/security/faq</a><br />\n-------------------------------------------------------------------------<br />\n<br />\nPackage        : chromium-browser<br />\nVulnerability  : several<br />\nProblem type   :...<br />", 
+            "is_read": false, 
+            "link": "http://seclists.org/fulldisclosure/2011/Mar/143", 
+            "published": "2011-03-10 21:23:30"
+        }
+    }, 
+    {
+        "pk": 54, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Full Disclosure", 
+            "title": "Re: Some magic secrets.", 
+            "summary": "<p>Posted by Ryan Sears on Mar 10</p>Hrm....<br />\n<br />\nCould this have something to do with this =&gt; <a href=\"http://pastebin.com/rD8hwpxT\" rel=\"nofollow\">http://pastebin.com/rD8hwpxT</a> ? :-P<br />\n<br />\nAs far as 'magic secrets' go, either disclose something or don't. Then move on, personally I think posting cryptic <br />\nmessages to a public forum like this is a bit dumb. If you're trying to say something, just say it. <br />\n<br />\nRyan<br />\n<br />\n----- Original Message -----<br />\nFrom: &quot;T Biehn&quot; &lt;tbiehn () gmail com&gt;<br />\nTo: &quot;full-disclosure&quot;...<br />", 
+            "is_read": false, 
+            "link": "http://seclists.org/fulldisclosure/2011/Mar/142", 
+            "published": "2011-03-10 20:28:54"
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Full Disclosure", 
+            "title": "Some magic secrets.", 
+            "summary": "<p>Posted by T Biehn on Mar 10</p>SA: R8P6PtAlwn2bQobnedI2g7TxgqL4n091Fcq44nRh6CY-<br />\nL: qCb_hz5hQVQezObhN.VP8HYkBdubli1el0xDUxDpvrU-<br />\nSO:?<br />\nV:?<br />\n<br />\nDo the replace live: &lt;value key=&quot;gallery.gallery-url&quot;&gt;localhost&lt;/value&gt;<br />\n<br />\nAlso,<br />\nFirst!<br />\n<br />\n-Travis<br />", 
+            "is_read": false, 
+            "link": "http://seclists.org/fulldisclosure/2011/Mar/141", 
+            "published": "2011-03-10 18:23:31"
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Full Disclosure", 
+            "title": "CarolinaCon-7 - Apr 29th thru May 1st 2011 -\tRaleigh NC", 
+            "summary": "<p>Posted by Vic Vandal on Mar 10</p>We're baaaaaaack!!!  CarolinaCon-7 will be held on April 29th thru May 1st <br />\n2011 in Raleigh NC.  For the cheap price of your average movie admission <br />\nwith popcorn and a drink ($20) YOU could get a full weekend of the <br />\nfollowing instead.<br />\n<br />\nESTEEEMED PRESENTERS / FASCINATING TALKS:<br />\n<br />\n- sec0ps - The Failure that is Penetration Testing<br />\n- Gerry Brunelle - Dissecting the Hack: Malware Analysis 101<br />\n- G. Mark Hardy - Tales from the Crypto<br />\n- Deral Heiland -...<br />", 
+            "is_read": false, 
+            "link": "http://seclists.org/fulldisclosure/2011/Mar/140", 
+            "published": "2011-03-10 16:27:13"
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Full Disclosure", 
+            "title": "New vulnerabilities in PHP-Nuke", 
+            "summary": "<p>Posted by MustLive on Mar 10</p>Hello list!<br />\n<br />\nI want to warn you about Insufficient Anti-automation and Cross-Site<br />\nScripting vulnerabilities in PHP-Nuke.<br />\n<br />\nSecurityVulns ID: 11485.<br />\n<br />\n-------------------------<br />\nAffected products:<br />\n-------------------------<br />\n<br />\nVulnerable are PHP-Nuke 8.0 and previous versions.<br />\n<br />\n----------<br />\nDetails:<br />\n----------<br />\n<br />\nInsufficient Anti-automation (WASC-21):<br />\n<br />\n<a href=\"http://site/modules.php?name=Submit_News\" rel=\"nofollow\">http://site/modules.php?name=Submit_News</a><br />\n<br />\nIn the form there is no protection from automated requests...<br />", 
+            "is_read": false, 
+            "link": "http://seclists.org/fulldisclosure/2011/Mar/139", 
+            "published": "2011-03-10 14:14:59"
+        }
+    }, 
+    {
+        "pk": 58, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Full Disclosure", 
+            "title": "[SECURITY] [DSA 2188-1] webkit security update", 
+            "summary": "<p>Posted by Giuseppe Iuculano on Mar 10</p>-------------------------------------------------------------------------<br />\nDebian Security Advisory DSA-2188-1                   security () debian org<br />\n<a href=\"http://www.debian.org/security/\" rel=\"nofollow\">http://www.debian.org/security/</a>                         Giuseppe Iuculano<br />\nMarch 10, 2011                         <a href=\"http://www.debian.org/security/faq\" rel=\"nofollow\">http://www.debian.org/security/faq</a><br />\n-------------------------------------------------------------------------<br />\n<br />\nPackage        : webkit<br />\nVulnerability  : several<br />\nProblem type   : remote...<br />", 
+            "is_read": false, 
+            "link": "http://seclists.org/fulldisclosure/2011/Mar/138", 
+            "published": "2011-03-10 13:56:07"
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Full Disclosure", 
+            "title": "Re: Insect Pro 2.1 : New version release", 
+            "summary": "<p>Posted by huj huj huj on Mar 10</p>lol lol lol<br />\n<br />\nnot enough kiddieporn on 4chan to keep you occupied today cal?<br />\n<br />\n2011/3/10 Cal Leeming &lt;cal () foxwhisper co uk&gt;<br />", 
+            "is_read": false, 
+            "link": "http://seclists.org/fulldisclosure/2011/Mar/137", 
+            "published": "2011-03-10 11:51:11"
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Full Disclosure", 
+            "title": "preliminary speakers selection for SyScan'11\tSingapore", 
+            "summary": "<p>Posted by Thomas Lim on Mar 10</p>The following speakers are 1 step closer to having helluva fun at<br />\nSHACK () PATTAYA <br />\n<br />\nThe top 3 ranking submissions for each category are:<br />\n<br />\nOffensive Technologies:<br />\nStefan Esser<br />\nUdi Shamir<br />\nCristian Lungu<br />\n<br />\nDefensive Technologies:<br />\nAssaf Nativ<br />\nAndreas Bogk<br />\n<br />\nBug Findings:<br />\nRyan MacArthur<br />\nMoti Joseph<br />\nMarc Schonefeld<br />\n<br />\nCloud Computing and Virtualization:<br />\nAngelo Rosiello<br />\n<br />\nDevice and/or Hardware Hacking:<br />\nDon Bailey<br />\nLaurent Oudot<br />\nSubu Ramanathan<br />\n<br />\nWeb-Centric...<br />", 
+            "is_read": false, 
+            "link": "http://seclists.org/fulldisclosure/2011/Mar/136", 
+            "published": "2011-03-10 11:33:42"
+        }
+    }, 
+    {
+        "pk": 61, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Full Disclosure", 
+            "title": "Re: Buying Web Malware Samples", 
+            "summary": "<p>Posted by Gino on Mar 10</p>So put the $500 in an escrow<br />", 
+            "is_read": false, 
+            "link": "http://seclists.org/fulldisclosure/2011/Mar/135", 
+            "published": "2011-03-10 11:32:06"
+        }
+    }, 
+    {
+        "pk": 62, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Full Disclosure", 
+            "title": "Re: Buying Web Malware Samples", 
+            "summary": "<p>Posted by Nicolai on Mar 10</p>Go go:<br />\n<a href=\"http://www.google.com/search?q=site:http://wepawet.cs.ucsb.edu/view.php?hash=\" rel=\"nofollow\">http://www.google.com/search?q=site:http://wepawet.cs.ucsb.edu/view.php?hash=</a><br />\n<br />\nSomehow I doubt I\u2019m going to see the 500 dollars...<br />", 
+            "is_read": false, 
+            "link": "http://seclists.org/fulldisclosure/2011/Mar/134", 
+            "published": "2011-03-10 11:30:42"
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Full Disclosure", 
+            "title": "Re: Insect Pro 2.1 : New version release", 
+            "summary": "<p>Posted by Cal Leeming on Mar 10</p>Imo, anyone who needs a GUI to help them use MSF, shouldn't be using MSF to<br />\nbegin with. lol.<br />", 
+            "is_read": false, 
+            "link": "http://seclists.org/fulldisclosure/2011/Mar/133", 
+            "published": "2011-03-10 11:29:19"
+        }
+    }, 
+    {
+        "pk": 64, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Full Disclosure", 
+            "title": "Re: Insect Pro 2.1 : New version release", 
+            "summary": "<p>Posted by Hyperion Hyp on Mar 10</p>Yup I've tried the product in question - it even has a msf directory within<br />\nin it lol.<br />\nIts basically some GUI tagged onto msf and its already  setup exploit module<br />\nlist - with a few others mixed in.<br />\n<br />\nIt even acts and looks like msf :)<br />\n<br />\nI have no bee in my bonnet for msf either - they're both just a framework of<br />\ntools - I just see that particular tool/framework to be basically the msf<br />\nwith a few added extra GUI shinny bits.<br />", 
+            "is_read": false, 
+            "link": "http://seclists.org/fulldisclosure/2011/Mar/132", 
+            "published": "2011-03-10 11:28:00"
+        }
+    }, 
+    {
+        "pk": 65, 
+        "model": "feeds.post", 
+        "fields": {
+            "feed": "Full Disclosure", 
+            "title": "[SECURITY] [DSA 2187-1] icedove security update", 
+            "summary": "<p>Posted by Moritz Muehlenhoff on Mar 10</p>-------------------------------------------------------------------------<br />\nDebian Security Advisory DSA-2187-1                   security () debian org<br />\n<a href=\"http://www.debian.org/security/\" rel=\"nofollow\">http://www.debian.org/security/</a>                        Moritz Muehlenhoff<br />\nMarch 09, 2011                         <a href=\"http://www.debian.org/security/faq\" rel=\"nofollow\">http://www.debian.org/security/faq</a><br />\n-------------------------------------------------------------------------<br />\n<br />\nPackage        : icedove<br />\nVulnerability  : several<br />\nProblem type   : remote...<br />", 
+            "is_read": false, 
+            "link": "http://seclists.org/fulldisclosure/2011/Mar/131", 
+            "published": "2011-03-10 09:51:47"
+        }
+    }
+]

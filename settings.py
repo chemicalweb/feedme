@@ -23,6 +23,10 @@ DATABASES = {
     }
 }
 
+FIXTURE_DIRS = (
+    os.path.join(ROOT_PATH, 'fixtures'),
+)
+
 CACHE_BACKEND = "locmem://"
 
 PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
