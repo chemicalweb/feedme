@@ -36,7 +36,7 @@ def update_feed(feed):
                 pubdate = datetime.fromtimestamp(mktime(pubdate))
             post = Post(
                 feed=feed,
-                author=feed.get('author', 'Unknown'),
+                author=feed.get('author', None),
                 link=entry.link,
                 title=entry.title,
                 summary=entry.summary,

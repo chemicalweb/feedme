@@ -22,7 +22,7 @@ class Feed(models.Model):
 
 class Post(models.Model):
     feed = models.ForeignKey(Feed, to_field='title')
-    author = models.CharField(max_length=50)
+    author = models.CharField(max_length=50, default='Unknown')
     link = models.URLField(unique=True, verify_exists=False)
     title = models.CharField(max_length=150)
     summary = models.TextField(unique=True)
