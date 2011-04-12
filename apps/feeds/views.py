@@ -57,12 +57,12 @@ def update_all(request):
             feed.save()
         for entry in parsed.entries:
             try:
-                if hasattr(entry, 'updated_parsed'):
-                    pubdate = datetime.fromtimestamp(mktime(entry.updated_parsed))
-                else:
-                    pubdate = None
+                pubdate = entry.get('updated_parsed', None)
+                if pubdate is not None:
+                    pubdate = datetime.fromtimestamp(mktime(pubdate))
                 post = Post(
                     feed=feed,
+                    author=feed.get('author', 'Unknown'),
                     link=entry.link,
                     title=entry.title,
                     summary=entry.summary,

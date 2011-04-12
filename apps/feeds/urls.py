@@ -14,10 +14,12 @@ urlpatterns += patterns('django.views.generic',
     url(r'^$', 'simple.direct_to_template', {
         'template': 'feeds/index.html',
     }, name='index'),
+
     url(r'section/(?P<object_id>[0-9]+)$', 'list_detail.object_detail', {
         'queryset': Section.objects.all(),
         'template_object_name': 'section',
     }, name='section'),
+
     url(r'post/(?P<object_id>[0-9]+)$', 'list_detail.object_detail', {
         'queryset': Post.objects.all(),
         'template_object_name': 'post',
