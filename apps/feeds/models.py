@@ -9,7 +9,7 @@ class Section(models.Model):
 
 
 class Feed(models.Model):
-    title = models.CharField(unique=True, max_length=50)
+    title = models.CharField(unique=True, max_length=50, blank=True, null=True)
     description = models.CharField(max_length=150, blank=True, null=True)
     url = models.URLField(unique=True)
     favicon = models.URLField(blank=True)

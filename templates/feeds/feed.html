@@ -1,4 +1,9 @@
 {% extends "base/sitebase.html" %}
+
+{% block extra_menu %}
+    <li class="update_one"><a href="{% url update_feed feed.id %}">Update</a></li>
+{% endblock extra_menu %}
+
 {% block content %}
     {% for post in posts.object_list %}
         <h4>{{ post.title }}</h4>
@@ -31,5 +36,4 @@
             {% endif %}
         </span>
     </div>
-
 {% endblock content %}

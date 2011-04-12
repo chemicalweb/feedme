@@ -12,7 +12,7 @@ from time import mktime
 
 import feedparser
 
-from lib.helpers import render_to
+from lib.helpers import render_to, update_feed
 
 
 @render_to("feeds/feed.html")
@@ -54,29 +54,13 @@ def update_all(request):
     """Get new posts for all the feeds."""
     cache.clear()
     for feed in Feed.objects.all():
-        parsed = feedparser.parse(feed.url)
-        if parsed.feed.description and (feed.description is None):
-            feed.description = parsed.feed.description
-            feed.save()
-        for entry in parsed.entries:
-            try:
-                pubdate = entry.get('updated_parsed', None)
-                if pubdate is not None:
-                    pubdate = datetime.fromtimestamp(mktime(pubdate))
-                post = Post(
-                    feed=feed,
-                    author=feed.get('author', 'Unknown'),
-                    link=entry.link,
-                    title=entry.title,
-                    summary=entry.summary,
-                    published=pubdate,
-                    is_read=False,
-                )
-                post.save()
-            except IntegrityError:
-                pass
+        for post in update_feed(feed):
+            post.save()
     return HttpResponseRedirect('/')
 
 def update_feed(request, feed_id):
     """Get new posts for given feed."""
+    feed = get_object_or_404(Feed, pk=feed_id)
+    for post in update_feed(feed):
+        post.save()
     return HttpResponseRedirect('/')

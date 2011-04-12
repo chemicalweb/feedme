@@ -12,6 +12,6 @@
                 {% endfor %}
             </ul>
         {% endfor %}
-        <li class="update_all"><a href="{% url update_all %}">Update Feeds</a></li>
+        {% block extra_menu %}{% endblock extra_menu %}
     </ul>
 </div>
