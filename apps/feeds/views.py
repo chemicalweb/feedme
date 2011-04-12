@@ -17,14 +17,15 @@ from lib.helpers import render_to
 
 @render_to("feeds/feed.html")
 def feed(request, feed_id):
+    """Display a feed and its posts."""
     f = get_object_or_404(Feed, pk=feed_id)
+    # cache posts
     post_list = cache.get("feed#%s" % feed_id)
     if post_list is None:
         post_list = f.post_set.all()
         cache.set("feed#%s" % feed_id, post_list, 600)
-
+    # paginate entries
     paginator = Paginator(post_list, 5)
-
     try:
         page = int(request.GET.get('page', '1'))
     except ValueError:
@@ -39,6 +40,7 @@ def feed(request, feed_id):
     )
 
 def mark_as_read(request):
+    """Mark a post as read."""
     if request.method == 'POST':
         form = MarkAsRead(request.POST)
         if form.is_valid():
@@ -49,6 +51,7 @@ def mark_as_read(request):
     return HttpResponseRedirect('/')
 
 def update_all(request):
+    """Get new posts for all the feeds."""
     cache.clear()
     for feed in Feed.objects.all():
         parsed = feedparser.parse(feed.url)
@@ -75,4 +78,5 @@ def update_all(request):
     return HttpResponseRedirect('/')
 
 def update_feed(request, feed_id):
+    """Get new posts for given feed."""
     return HttpResponseRedirect('/')

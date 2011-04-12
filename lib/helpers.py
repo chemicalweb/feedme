@@ -6,7 +6,12 @@ from django.template import RequestContext
 
 class render_to(object):
     """
-    Simplify template rendering by using a decorator.
+    Simplify template rendering by decorating view functions.
+
+    Usage:
+        @render_to('my_template.html')
+        def index(request):
+            return {'message': 'Hello World!'}
     """
     def __init__(self, template):
         self.template = template
