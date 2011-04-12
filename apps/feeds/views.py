@@ -7,11 +7,6 @@ from django.shortcuts import get_object_or_404
 from apps.feeds.forms import MarkAsRead
 from apps.feeds.models import Feed, Post
 
-from datetime import datetime
-from time import mktime
-
-import feedparser
-
 from lib.helpers import render_to, update_feed
 
 
