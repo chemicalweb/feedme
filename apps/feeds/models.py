@@ -9,7 +9,7 @@ class Section(models.Model):
 
 
 class Feed(models.Model):
-    title = models.CharField(unique=True, max_length=50, blank=True, null=True)
+    title = models.CharField(max_length=50, blank=True, null=True)
     description = models.CharField(max_length=150, blank=True, null=True)
     url = models.URLField(unique=True)
     favicon = models.URLField(blank=True)
@@ -21,7 +21,7 @@ class Feed(models.Model):
 
 
 class Post(models.Model):
-    feed = models.ForeignKey(Feed, to_field='title')
+    feed = models.ForeignKey(Feed, to_field='url')
     author = models.CharField(max_length=50, default='Unknown')
     link = models.URLField(unique=True, verify_exists=False)
     title = models.CharField(max_length=150)
