@@ -107,10 +107,12 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 INSTALLED_APPS = (
+    # admin_tools (better admin panel)
     'admin_tools.theming',
     'admin_tools.menu',
     'admin_tools.dashboard',
 
+    # django builtins
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -118,6 +120,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.admin',
 
+    # apps
     'apps.feeds',
 )
 
@@ -126,7 +129,7 @@ if DEBUG:
     INSTALLED_APPS += ('django_extensions',)
     if USE_DEBUG_TOOLBAR:
         MIDDLEWARE_CLASSES += ('debug_toolbar.middleware.DebugToolbarMiddleware',)
-        INSTALLED_APPS += ('debug_toolbar',)
+        INSTALLED_APPS += ('debug_toolbar', 'south')
         DEBUG_TOOLBAR_PANELS = (
             'debug_toolbar.panels.version.VersionDebugPanel',
             'debug_toolbar.panels.timer.TimerDebugPanel',
