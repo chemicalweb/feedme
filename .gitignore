@@ -3,3 +3,5 @@
 *.pyo
 *~
 *.orig
+local_settings.py
+feedme.sqlite
