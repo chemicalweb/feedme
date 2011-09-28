@@ -1,0 +1,44 @@
+@font-face {
+    font-family: deftone;
+    src: url('deftone.otf');
+}
+
+body {
+    background-color: #89b1a3;
+}
+
+#header,
+#header #title,
+#menu,
+#footer {
+    color: white;
+    background-color: #333;
+}
+
+#header, #header #title {
+    color: white;
+    background-color: #333;
+}
+
+#header #title {
+    font-family: deftone,serif;
+    font-size: 400%;
+}
+
+#menubar ul li a {
+    vertical-align: middle;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #6f6f6f;
+}
+
+#menubar ul li a:visited {
+    color: white;
+}
+
+#menubar ul li a:hover, #menubar ul li a.current {
+    color: #fff;
+    background-color: #565656;
+}
