@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FeedMe - {% block title %}{% endblock %}</title>
+    <!-- Javascript -->
+    <script type="text/javascript" src="{{ JS_PATH }}/jquery-1.6.2.min.js"></script>
+    <!-- END Javascript -->
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen, projection"
+          href="{{ CSS_PATH }}/blueprint/screen.css" />
+    <link rel="stylesheet" type="text/css" media="print"
+          href="{{ CSS_PATH }}/blueprint/print.css" />
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" type="text/css" media="screen, projection"
+          href="{{ CSS_PATH }}/blueprint/ie.css" />
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="{{ CSS_PATH }}/layout.css" />
+    <link rel="stylesheet" type="text/css" href="{{ CSS_PATH }}/feedme.css" />
+    <!-- END CSS -->
+</head>
+
+<body>
+<div class="container">
+    <div id="header" class="span-30">
+        {% include 'header.html' %}
+    </div>
+    <div id="menu" class="span-7">
+        {% include 'left_menu.html' %}
+    </div>
+    <div id="content" class="right span-23 last">
+        {% block body %}{% endblock %}
+    </div>
+    <div id="footer" class="span-30">
+        {% include 'footer.html' %}
+    </div>
+</div>
+</body>
+</html>
